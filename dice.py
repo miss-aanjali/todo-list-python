@@ -17,3 +17,20 @@ def main():
             break
 
 main()
+
+
+import random
+def roll_dice():
+    return random.randint(1,6)
+def main():
+    print("Dice rolling simulator:")
+
+    while True:
+        dice = roll_dice()
+        print("You rolled", dice)
+
+        choice = input("do youwant to play this game again?").lower()
+        if choice != "yes":
+            print("Thanks fotr playing!")
+            break
+main()
